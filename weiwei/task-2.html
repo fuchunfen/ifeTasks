@@ -9,6 +9,10 @@
             padding: 0;
         }
 
+        body {
+            background-color: #DEDEDE;
+        }
+
         nav {
             width: 100%;
             height: 60px;
@@ -36,30 +40,220 @@
             position: relative;
         }
 
-         nav li a {
-             display: block;
-             color: #fff;
-             font-size: 12px;
-             text-decoration: none;
-             height: 60px;
-             line-height: 60px;
-         }
+        nav li a {
+            display: block;
+            color: #fff;
+            font-size: 12px;
+            text-decoration: none;
+            height: 60px;
+            line-height: 60px;
+        }
 
-         nav li:last-child a{
-             color:
-         }
+        nav li:last-child a {
+            color: #A7A6A4;
+        }
 
-         nav li span {
-             display: block;
+        nav li span {
+            display: block;
 
-             width: 0;
-             border: 4px solid #000;
-             border-radius: 50%;
-             position: absolute;
-             top:25px;
-             left:-16px;
+            width: 0;
+            border: 4px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            left: -16px;
 
-         }
+        }
+
+        article, .pictures, aside {
+            margin: 20px 20px 0 20px;
+            background-color: #FFF;
+            padding: 20px;
+        }
+
+        article h1 {
+            margin-top: 20px;
+        }
+
+        article h2 {
+            font-size: 20px;
+            color: #9b9b9d;
+            margin-top: 20px;
+        }
+
+        article .author {
+            color: #9b9b9d;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        article p {
+            text-indent: 2em;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+
+        article img {
+            margin-top: 10px;
+        }
+
+        .item-list {
+            list-style: none;
+            margin: 10px;
+            line-height: 30px;
+        }
+
+        .pictures dl {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+
+        .pictures dl dd {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .pictures dl img {
+            width: 180px;
+            height: 150px;
+            margin: 0 10px;
+        }
+
+        .rank-list {
+            margin-top: 20px;
+            margin-left: 40px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+
+        .mytable {
+            width: 100%;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .mytable thead {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .mytable th, .mytable td {
+            padding: 4px;
+        }
+
+        .mytable td {
+            border-left: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+        }
+
+        .mytable tfoot {
+            background-color: #ddd;
+        }
+
+        aside h1 {
+            font-size: 18px;
+            border-left: 5px solid #ddd;
+            padding: 6px 8px;
+        }
+
+        .input-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .input-box .item-line {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .input-box .item-line > label {
+            width: 40%;
+            float: left;
+            text-align: right;
+
+        }
+
+        .input-box .item-line .item {
+            width: 60%;
+            float: left;
+        }
+
+        .input-box .item-line input[type=text], .input-box .item-line input[type=password] {
+            padding: 4px 6px;
+
+        }
+
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: #000;
+        }
+
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #000;
+            opacity: 1;
+        }
+
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: #000;
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: #000;
+        }
+
+        .input-box .item span {
+            color: #ccc;
+            font-size: 12px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .item-line:before, .item-line:after {
+            display: table;
+            content: " ";
+            clear: both;
+        }
+
+        .item input[type=radio] {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .item-line select {
+            padding: 4px 6px;
+        }
+
+        .item input[type=checkbox] {
+            margin-left: 10px;
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+        }
+        .item textarea{
+            text-align: left;
+        }
+        .input-box button{
+            width:100%;
+            background-color: #3355d0;
+            color:#fff;
+            border-radius:10px;
+            padding:12px;
+            font-size: 18px;
+        }
+        footer{
+            height: 60px;
+            background-color: #000;
+            color:#fff;
+            text-align: center;
+            line-height: 60px;
+        }
+
     </style>
 </head>
 <body>
@@ -78,10 +272,11 @@
 <article>
     <h1>文章一级标签</h1>
     <h2>文章二级标签</h2>
-    <p>文章作者 文章发表时间</p>
+    <div class="author">文章作者 文章发表时间</div>
     <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
         <a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>
-        这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p>
+        这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落，换行了<br/>
+        这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落</p>
     <img src="http://imgcache.cjmx.com/star/201608/20160808121709911.jpg">
     <p>
         这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落，换行了<br/>这是一个很长的段落
@@ -89,22 +284,22 @@
         这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落这是一个很长的段落</p>
 </article>
 <article>
-    <h1>文章一级标签</h1>
+    <h1>另一篇文章一级标题</h1>
     <h2>文章二级标签</h2>
-    <p>文章作者 文章发表时间</p>
+    <div class="author">文章作者 文章发表时间</div>
     <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
         <a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>
         这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
         <strong>这里有个粗体字</strong>
         这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p>
     <img src="http://imgcache.cjmx.com/star/201608/20160808121709911.jpg">
-    <ul>
+    <ul class="item-list">
         <li>列表项目一</li>
         <li>列表项目二</li>
         <li>列表项目三</li>
     </ul>
 </article>
-<section>
+<section class="pictures">
     <h1>图片</h1>
     <dl>
         <dd>好看的图片</dd>
@@ -151,14 +346,14 @@
 <article>
     <h1>最后一篇文章一级标题</h1>
     <h2>文章二级标题</h2>
-    <p>文章作者 文章发表时间</p>
-    <ol>
+    <div class="author">文章作者 文章发表时间</div>
+    <ol class="rank-list">
         <li>排名1</li>
         <li>排名2</li>
         <li>排名3</li>
     </ol>
-    <p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-    <table border="1">
+    <span>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格,你们不用写html时候不需要加</span>
+    <table class="mytable">
         <thead>
         <tr>
             <th>表头</th>
@@ -195,43 +390,67 @@
         </tr>
         </tfoot>
     </table>
-    <aside>
-        <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-        <div>
-            <h3>侧栏注册窗口标题</h3>
+</article>
+<aside>
+    <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+    <div class="input-box">
+        <div class="item-line">
             <label>请输入邮箱地址：</label>
-            <input type="text" placeholder="这是一个文本输入框">
-            <p>邮箱地址请按要求格式输入</p>
+            <div class="item">
+                <input type="text" placeholder="这是一个文本输入框">
+                <br/>
+                <span>邮箱地址请按要求格式输入</span>
+            </div>
+        </div>
+        <div class="item-line">
             <label>请输入密码：</label>
-            <input type="password" placeholder="这是一个文本输入框">
+            <div class="item">
+                <input type="password" placeholder="请输入密码">
+            </div>
+        </div>
+        <div class="item-line">
             <label>请重复输入密码：</label>
-            <input type="password" placeholder="这是一个文本输入框"><br/>
-            <span>密码请为6-16位英文数字</span>
-
-            <div>
-                性别：<input type="radio" name="sex"><label>男</label>
+            <div class="item">
+                <input type="password" placeholder="确认密码"><br/>
+                <span>密码请为6-16位英文数字</span>
+            </div>
+        </div>
+        <div class="item-line">
+            <label>性别：</label>
+            <div class="item">
+                <input type="radio" name="sex"><label>男</label>
                 <input type="radio" name="sex"><label>女</label>
-                城市：
+            </div>
+        </div>
+        <div class="item-line">
+            <label>城市：</label>
+            <div class="item">
                 <select>
                     <option>北京</option>
                     <option>上海</option>
                     <option>武汉</option>
-                    </section>
-                    爱好：
-                    <input type="checkbox">运动
-                    <input type="checkbox">艺术
-                    <input type="checkbox">科学
-                    个人描述：
-                    <textarea>
-                    这是一个多行输入框，输入你您的个人描述
-                </textarea>
-                    <button type="submit">确认提交</button>
+                </select>
             </div>
-
         </div>
+        <div class="item-line">
+            <label>爱好：</label>
+            <div class="item">
+                <input type="checkbox">运动
+                <input type="checkbox">艺术
+                <input type="checkbox">科学
+            </div>
+        </div>
+        <div class="item-line">
+            <label>个人描述：</label>
+            <div class="item">
+                <textarea rows="10" cols="80">这是一个多行输入框，输入你您的个人描述</textarea>
+            </div>
+        </div>
+        <button type="submit">确认提交</button>
 
-    </aside>
-</article>
+    </div>
+
+</aside>
 <footer>版权所有&copy;</footer>
 </body>
 </html>
