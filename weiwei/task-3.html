@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三：三栏式布局</title>
+    <style>
+        .container{
+            width:100%;
+            padding:20px;
+            background-color: #eee;
+            border: 1px solid #999;
+        }
+        .clearfix:after{
+            content: '.';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .left-box{
+            width:200px;
+            float:left;
+            background-color: #fff;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        .left-box img{
+            width:80px;
+            height:80px;
+            border:1px solid #999;
+        }
+        .left-box span{
+            vertical-align: top;
+            font-size: 12px;
+        }
+        .right-box {
+            width: 120px;
+            float: right;
+            background-color: #fff;
+            padding:20px;
+            box-sizing: border-box;
+            margin-right:20px;
+        }
+        .right-box img{
+            width:80px;
+            height:80px;
+            margin-bottom:20px;
+        }
+        .right-box img:last-child{
+            margin-bottom: 0;
+        }
+        .center-box{
+            background-color: #fff;
+            padding:20px;
+            margin-left:220px;
+            margin-right:160px;
+            box-sizing: border-box;
+            text-indent: 2em;
+            line-height: 2em;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+
+        <div class="left-box">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488797797582&di=8730feeb18322d9b775db345df7a401b&imgtype=0&src=http%3A%2F%2Fm.qqzhi.com%2Fupload%2Fimg_1_498065047D1940322834_23.jpg">
+            <span>草帽海贼团</span>
+        </div>
+        <div class="right-box">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1488788374&di=8cd8321864bfc4573c183f26fd937ab2&src=http://imgsrc.baidu.com/forum/w=580/sign=81a7a1984ced2e73fce98624b700a16d/855a8735e5dde71127320deaa1efce1b9c166186.jpg">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489393290&di=b88c334ab944eaf3ae899339f81a5619&imgtype=jpg&er=1&src=http%3A%2F%2Fi0.hdslb.com%2Fvideo%2F54%2F54faea348b520dda60b56cbed9a4a4a8.jpg">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488798611854&di=3d40d220796625c087ffe0285d84a065&imgtype=0&src=http%3A%2F%2Fpic33.nipic.com%2F20130927%2F12045420_085444259113_2.png">
+            <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2593266207,3371238973&fm=23&gp=0.jpg">
+        </div>
+        <div class="center-box">
+            草帽海贼团是日本漫画《航海王》中主人公蒙奇·D·路飞所集结的海贼团，旗帜图案是戴着草帽的骷髅。截止佐乌篇后全部成员共九人，全都被悬赏，共计十五亿七千万零一百贝利。旗下还有7队团体组成的“草帽大船团”，分别为俊美海贼团、巴托俱乐部、八宝水军、XXX健身房格斗联合、咚塔塔族咚塔兵团、巨兵海贼团以及约塔玛利亚大船团。
+            从东海进入伟大航路，经过“司法之岛事件”后，名扬天下。至香波地诸岛，全员被熊弹飞分散到世界各地。经由“冥王”雷利的指点，船员们两年期间各自修炼。之后草帽一伙重新聚集于香波地诸岛，进入“新世界”。现故事发展到草帽一伙为了迎战凯多，前往万国接回山治。
+            <br />
+            东海篇
+            路飞童年时受到海贼“红发”香克斯的启蒙，自小就立志要成为“海贼王”[3]  。路
+            飞17岁时，戴着“红发”香克斯托付的草帽，只身从故乡风车村出发。途中他遇到在“亚比达海贼团”打杂的少年克比，在打倒海贼团的船长“铁棒”亚尔丽塔后，路飞得知东海有个外号“海贼猎人”的剑士罗罗诺亚·索隆[4]  ，并想要拉拢他成为伙伴，遂与可比两人来到被海军支部上校“斧手”蒙卡统治的谢尔兹镇。
+            由于索隆曾在镇上打伤了蒙卡上校的儿子贝鲁梅柏所饲养的狼犬，在被拘捕后即将被处死。索隆被路飞的气势慑服，并合力打倒蒙卡上校。索隆正式成为了路飞的第一个伙伴，而克比在路飞的帮助下也如愿成为了海军，在航行的路途中接续遇见了娜美、乌索普[5]  、山治等人组成了草帽海贼团准备进入伟大的航道，路飞也因打败了鱼人海贼团阿龙一伙的船长路飞成为了三千万贝里的赏金犯。
+            草帽一行人到达了罗格镇，受到管辖这里的海军本部少校“白猎人”斯摩格(现为海军本部准将)和其他许多敌人的夹击，在路飞的父亲蒙奇·D·龙的帮助下，成功出航。
+            离开罗格镇后，草帽一行人跨越颠倒山之后进入了伟大航道，展开下一段冒险。
+
+        </div>
+
+    </div>
+</body>
+</html>
